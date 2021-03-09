@@ -1,0 +1,196 @@
+body{
+    background:black;
+}
+
+a{
+    text-decoration: none;
+}
+
+.container{
+    width:80%;
+    margin:0 auto;
+    background-color: #fff;    
+}
+
+header{
+display: flex;
+flex-wrap: wrap;
+width: 100%;
+background-color: #a09d9d;
+}
+
+#logo h1{
+    margin-left: 40px;
+    font-family: 'Sacramento', cursive;
+    font-weight: bold;
+    font-size: 3rem;
+}
+
+#title h1{
+    margin-left: 20px;
+    font-family: 'Poppins', sans-serif;
+    color: blue;
+    text-transform: uppercase;
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+
+
+#menu{
+    display: flex;
+    background-color:#1c52ccf2;
+}
+
+#menu ul{
+    width:80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content:space-around;
+}
+
+#menu li{
+    display: flex;
+    list-style-type: none;
+    border: 1px white solid;
+    width: 100%;
+    position: pointer;
+}
+#menu ul li a{
+    
+    width: 100%;
+    font-size: 1.7rem;  
+    text-align: center;
+    color: #fff;
+    padding: 20px;
+}
+#menu ul li:hover{
+    background:blue;
+}
+
+
+.img-producto{
+    width:80%;
+    margin: 0 auto;
+}
+
+.img-producto img{
+    width: 100%;  
+} 
+.producto h2{
+    margin: 1px;
+    text-align: center;
+}
+
+.producto p{
+    margin: 1px;
+    text-align: center;
+}
+
+
+
+.container_main{
+    display: flex; 
+}
+
+aside{
+width:20%;
+border-right: 1px black solid;
+margin: 0px;
+-webkit-box-shadow: 6px 9px 15px 0px rgba(0,0,0,0.62); 
+box-shadow: 6px 9px 15px 0px rgba(0,0,0,0.62);
+}
+
+main{
+width:80%;
+display: flex;
+flex-wrap: wrap;
+justify-content:space-evenly;
+}
+
+main .producto{
+    width: 300px;
+    border: 1px black solid;
+    margin:20px;
+}
+
+
+footer{
+    border-top:5px blue solid;
+    background: #0a0a0a6b;
+}
+
+footer p{
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.4rem;
+    padding: 30px;
+    margin: 0px;
+}
+
+
+.log_web_title{
+    width:60%;
+    margin: 0 auto;
+    text-align: center;
+    background-color: #80808042;
+}
+
+.log_web_title h3{
+    border-bottom: 2px blue solid;
+}
+
+.d-flex{
+    display: flex;
+}
+
+.d-flex .label{
+    margin: 5px 0px;
+    width: 100%;
+    text-align: center;
+}
+
+.d-flex .input{
+    margin: 5px 0px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.btn{
+    width: 40%;
+    margin: 10px auto;
+    background-color: blue;
+    color: #fff;
+    cursor: pointer;
+}
+.btn:hover{
+    background-color: #0000ff85;
+}
+
+.btn_producto{
+    margin: 10px auto;
+    background-color: green;
+    color: #fff;
+    text-align: center;
+    width: 60%;
+    font-size: 1.3rem;
+    padding: 1px;
+    cursor: pointer;
+}
+
+.btn_producto:hover{
+    background-color: #309230;
+}
+
+.options{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+
+}
+.options a{
+    width: 100%;
+    margin-left: 10%;
+    color: blue;
+    font-size: 0.9rem;
+}
