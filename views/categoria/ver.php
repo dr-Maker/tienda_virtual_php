@@ -1,4 +1,12 @@
- <?php while($pdto = $productos->fetch_object()) : ?>
+<?php if(isset($categoria)) : ?>
+<div>
+    <h1><?= $category->nombre ?></h1>
+    <?php if($productos->num_rows == 0) : ?>
+        <p>No hay productos para mostrar</p>
+
+    <?php else :?>    
+
+<?php while($pdto = $productos->fetch_object()) : ?>
 
 <div class="producto">   
     <a href="<?=base_url?>producto/ver&id=<?=$pdto->id?>">
@@ -17,3 +25,10 @@
 <?php endwhile; ?>
 
 
+
+    <?php endif; ?>
+</div>
+
+<?php else : ?>
+    <h1>La categoria no existe</h1>
+<?php endif; ?>

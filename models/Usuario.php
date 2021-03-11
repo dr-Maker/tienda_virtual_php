@@ -16,6 +16,7 @@ class Usuario{
    function getId(){
        return $this->id;
    }
+
     function setId($id){
          $this->id = $id;    
    }
@@ -23,6 +24,7 @@ class Usuario{
    function getNombre(){
         return $this->nombre;
    }
+
    function setNombre($nombre){
           $this->nombre = $this->db->real_escape_string($nombre);    
    }
@@ -30,6 +32,7 @@ class Usuario{
    function getApellidos(){
         return $this->apellidos;
    }
+
    function setApellidos($apellidos){
           $this->apellidos = $this->db->real_escape_string($apellidos);    
    }
@@ -37,6 +40,7 @@ class Usuario{
    function getEmail(){
         return $this->email;
    }
+
    function setEmail($email){
           $this->email = $this->db->real_escape_string($email);    
    }
@@ -45,6 +49,7 @@ class Usuario{
         return password_hash($this->db->real_escape_string($this->password), PASSWORD_BCRYPT, ['cost'=> 4]);
         
    }
+
    function setPassword($password){
           $this->password = $password;
    }
@@ -52,6 +57,7 @@ class Usuario{
    function getRol(){
         return $this->rol;
    }
+   
    function setRol($rol){
           $this->rol = $this->db->real_escape_string($rol);    
    }
@@ -59,6 +65,7 @@ class Usuario{
    function getImagen(){
         return $this->imagen;
    }
+
    function seImagen($imagen){
           $this->imagen = $this->db->real_escape_string($imagen);    
    }

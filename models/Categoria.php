@@ -26,9 +26,16 @@ class Categoria{
     }
 
     public function getAll(){
-       $categorias = $this->db->query("SELECT * FROM categorias");
+       $sql = "SELECT * FROM categorias";
+       $categorias = $this->db->query($sql);
         return $categorias;
     } 
+
+    public function getOne(){
+        $sql = "SELECT * FROM categorias WHERE id = {$this->getId()}";
+        $categoria = $this->db->query($sql);
+         return $categoria->fetch_object();
+    }
 
     public function save(){
         $sql = "INSERT INTO categorias(nombre) VALUES('{$this->getNombre()}')";
